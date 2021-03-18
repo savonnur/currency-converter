@@ -1,0 +1,54 @@
+#jumbo {
+  background-image: url("./map.jpg");
+
+    .container {
+      text-align: center;
+      color: white;
+    }
+}
+
+.card {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.card-header {
+  background-color: #1c1c1c;
+}
+
+.my-0 {
+  color: white;
+}
+
+.cnv_btn{
+  text-align: center;
+
+  .btn {
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #1c1c1c;
+    color: white;
+    @media only screen and (max-width: 600px){
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+.input_box {
+  margin-bottom: 20px;
+}
+
+#Converted {
+  color: blue;
+}
+
+.footer {
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  height: 8vh;
+  color: white;
+  background-color: #1c1c1c;
+}

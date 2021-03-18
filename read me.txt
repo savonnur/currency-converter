@@ -1,0 +1,1 @@
+A currency converter made using HTML, SASS, Bootstrap, Javascript, and Jquery. Uses Foreign exchange rates API to get live exchange rates. There's 6 popular currencies available to use. Select base currency, then target currency, enter the amount, then click the convert button to get the conversion. 
