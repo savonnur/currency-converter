@@ -1,4 +1,4 @@
-var url = 'https://api.exchangeratesapi.io/latest?base=';
+const url = "https://api.ratesapi.io/api/latest?base="
 
 async function convert(){
   var base = document.getElementById('Base').value;
@@ -14,4 +14,4 @@ async function convert(){
   finalValue = finalValue[out]*Number(amount);
   var result = `${finalValue} ${out}`;
   document.getElementById('Converted').innerText = result;
-}
+};
