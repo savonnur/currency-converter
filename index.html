@@ -12,67 +12,93 @@
 </head>
 
 <body>
-  <div class="jumbotron" id="jumbo">
-    <div class="container">
-      <h1 class="display-3 header-text" >Currency Converter</h1>
-      <p class="sub-header-text">A currency converter is software code that is designed to convert one currency into another in order to check its corresponding value.</p>
-    </div>
-  </div>
 
-  <div class="card mb-4 shadow-sm" id="converter">
-    <div class="card-header">
-      <h4 class="my-0 font-weight-normal">Base Currency</h4>
-    </div>
-    <div class="card-body">
-      <h3>Select Currency</h3>
-      <select id="Base">
-        <option value="USD">United States Dollar - USD</option>
-        <option value="EUR">European Euro - EUR</option>
-        <option value="JPY">Japanese Yen - JPY</option>
-        <option value="GBP">Great British Pound - GBP</option>
-        <option value="AUD">Australian Dollar - AUD</option>
-        <option value="CAD">Canadian Dollar - CAD</option>
-      </select>
-    </div>
+  <!-- Heading Section  -->
+  <section id="Header">
 
-    <div class="card-header">
-      <h4 class="my-0 font-weight-normal">Target Currency</h4>
-    </div>
-    <div class="card-body">
-      <h3>Select Currency</h3>
-      <select id="Output">
-        <option value="USD">United States Dollar - USD</option>
-        <option value="EUR">European Euro - EUR</option>
-        <option value="JPY">Japanese Yen - JPY</option>
-        <option value="GBP">Great British Pound - GBP</option>
-        <option value="AUD">Australian Dollar - AUD</option>
-        <option value="CAD">Canadian Dollar - CAD</option>
-      </select>
-    </div>
-
-    <div class="card-header">
-      <h4 class="my-0 font-weight-normal">Amount</h4>
-    </div>
-    <div class="card-body">
-      <h3>Enter Amount:</h3>
-      <input type="number" class="input_box" id="Amount" placeholder="Enter Amount here">
-      <div class="cnv_btn">
-        <button type="button" class="btn btn-outline-dark btn-lg" onclick="convert();">
-          Convert
-        </button>
+    <div class="jumbotron" id="jumbo">
+      <div class="container">
+        <h1 class="display-3 header-text" >Currency Converter</h1>
+        <p class="sub-header-text">A currency converter is software code that is designed to convert one currency into another in order to check its corresponding value.</p>
       </div>
     </div>
+  </section>
 
-    <div class="card-header">
-      <h4 class="my-0 font-weight-normal">Output</h4>
+  <!-- Converter Section  -->
+  <section id="ConverterBox">
+
+    <!-- Start of Currency Converter  -->
+    <div class="card mb-4 shadow-sm" id="converter">
+
+      <!-- Start of Base Currency  -->
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Base Currency</h4>
+      </div>
+      <div class="card-body">
+        <h3>Select Currency</h3>
+        <select id="Base">
+          <option value="USD">United States Dollar - USD</option>
+          <option value="EUR">European Euro - EUR</option>
+          <option value="JPY">Japanese Yen - JPY</option>
+          <option value="GBP">Great British Pound - GBP</option>
+          <option value="AUD">Australian Dollar - AUD</option>
+          <option value="CAD">Canadian Dollar - CAD</option>
+        </select>
+      </div>
+      <!-- End of Base Currency  -->
+  
+      <!-- Start of Target Currency  -->
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Target Currency</h4>
+      </div>
+      <div class="card-body">
+        <h3>Select Currency</h3>
+        <select id="Output">
+          <option value="USD">United States Dollar - USD</option>
+          <option value="EUR">European Euro - EUR</option>
+          <option value="JPY">Japanese Yen - JPY</option>
+          <option value="GBP">Great British Pound - GBP</option>
+          <option value="AUD">Australian Dollar - AUD</option>
+          <option value="CAD">Canadian Dollar - CAD</option>
+        </select>
+      </div>
+      <!-- End of Target Currency  -->
+  
+      <!-- Start of Amount  -->
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Amount</h4>
+      </div>
+      <div class="card-body">
+        <h3>Enter Amount:</h3>
+        <input type="number" class="input_box" id="Amount" placeholder="Enter Amount here">
+        
+
+        <!-- Start of Convert Button  -->
+        <div class="cnv_btn">
+          <button type="button" class="btn btn-outline-dark btn-lg" onclick="convert();">
+            Convert
+          </button>
+        </div>
+        <!-- End of Convert Button  -->
+      </div>
+      <!-- End of Amount  -->
+  
+      <!-- Start of Conversion  -->
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Output</h4>
+      </div>
+      <div class="card-body">
+        <h3>Conversion</h3>
+        <h3 id="Converted"></h3>
+      </div>
+      <!-- End of Conversion  -->
+  
     </div>
-    <div class="card-body">
-      <h3>Conversion</h3>
-      <h3 id="Converted"></h3>
-    </div>
+    <!-- End of Currency Converter  -->
 
-  </div>
-
+  </section>
+  
+  
   <footer>
     <div class="footer">
       Coded by Savon Nur // Using Foreign exchange rates API
