@@ -1,4 +1,4 @@
-const url = "https://api.ratesapi.io/api/latest?base=" //usage link to get latest foreign exchange rates with base.
+const url = "https://api.exchangerate.host/latest?base=" //usage link to get latest foreign exchange rates with base.
 
 async function convert(){ //async function to convert currency from base currency to target currency.
   var base = document.getElementById('Base').value; //sets the value of the base currency selected.
